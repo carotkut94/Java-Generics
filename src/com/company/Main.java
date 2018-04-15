@@ -26,11 +26,13 @@ public class Main {
         //and if the array list is defined with the type, then above line would show error, so commented out.
         printDoubled(items);
     }
-
-    private static void printDoubled(ArrayList a){
-        for(Object i : a)
+    // Changed the type for argument
+    private static void printDoubled(ArrayList<Integer> a){
+        // Changed Object to Integer
+        for(Integer i : a)
         {
-            System.out.println((Integer)i*2);
+            // No force cast required
+            System.out.println(i*2);
         }
     }
 }
